@@ -1,9 +1,10 @@
 -- sentry_register.lua
 -- Registers all 48 auto-sentry re-skins + original combine_sentry
 -- into the spawnmenu under "Combine Sentries".
--- This file is server-side autorun; the spawn menu entries are
--- already handled by each entity's Spawnable/Category fields.
--- This file exists as a convenience index.
+--
+-- Validation is deferred to InitPostEntity because scripted_ents is not
+-- fully populated at autorun/server time – running the check immediately
+-- produced false "Missing entity" errors for every classname.
 
 if not SERVER then return end
 
@@ -69,10 +70,15 @@ local SENTRIES = {
     "sentry_zpu4_1949",
 }
 
-for _, classname in ipairs(SENTRIES) do
-    if not scripted_ents.GetStored(classname) then
-        ErrorNoHalt("[Combine Sentries] Missing entity: " .. classname .. "\n")
+-- Defer the check until all entities are fully loaded.
+hook.Add("InitPostEntity", "CombineSentries_Validate", function()
+    local missing = 0
+    for _, classname in ipairs(SENTRIES) do
+        if not scripted_ents.GetStored(classname) then
+            ErrorNoHalt("[Combine Sentries] Missing entity: " .. classname .. "\n")
+            missing = missing + 1
+        end
     end
-end
-
-print("[Combine Sentries] Loaded " .. #SENTRIES .. " sentries.")
+    local loaded = #SENTRIES - missing
+    print("[Combine Sentries] Loaded " .. loaded .. " / " .. #SENTRIES .. " sentries.")
+end)
