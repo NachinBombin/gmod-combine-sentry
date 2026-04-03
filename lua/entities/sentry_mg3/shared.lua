@@ -1,0 +1,22 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "MG3 7.62mm Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_mg3.png"
+
+ENT.SentryModel      = "models/gredwitch/mg3.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 14
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.022
+ENT.BulletSound      = "weapons/ar2/fire1.wav"
+ENT.FireInterval     = 60 / 1150
+ENT.YawMin           = -180
+ENT.YawMax           =  180
+ENT.PitchMin         = -10
+ENT.PitchMax         =  45
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(38, 0, 10)

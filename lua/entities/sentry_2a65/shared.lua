@@ -1,0 +1,21 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "2A65 152mm Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_2a65.png"
+
+ENT.SentryModel   = "models/gredwitch/2a65.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 520
+ENT.RocketRadius  = 640
+ENT.FireInterval  = 60 / 5.5
+ENT.YawMin        = -45
+ENT.YawMax        =  45
+ENT.PitchMin      = -3
+ENT.PitchMax      =  50
+ENT.SentryHealth  = 900
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(85, 0, 14)

@@ -1,0 +1,20 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "KwK 40 75mm Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_kwk.png"
+
+ENT.SentryModel   = "models/gredwitch/kwk.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 240
+ENT.RocketRadius  = 160
+ENT.FireInterval  = 60 / 10
+ENT.YawMin        = -30
+ENT.YawMax        =  30
+ENT.PitchMin      = -8
+ENT.PitchMax      =  12
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(65, 0, 10)

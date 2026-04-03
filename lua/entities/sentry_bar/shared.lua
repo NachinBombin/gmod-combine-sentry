@@ -1,0 +1,22 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "BAR .30-06 Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_bar.png"
+
+ENT.SentryModel      = "models/gredwitch/bar.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 14
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.028
+ENT.BulletSound      = "weapons/ar2/fire1.wav"
+ENT.FireInterval     = 60 / 475
+ENT.YawMin           = -90
+ENT.YawMax           =  90
+ENT.PitchMin         = -10
+ENT.PitchMax         =  30
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(34, 0, 10)

@@ -1,0 +1,20 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "ZiS-3 76mm Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_zis3.png"
+
+ENT.SentryModel   = "models/gredwitch/zis3.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 210
+ENT.RocketRadius  = 155
+ENT.FireInterval  = 60 / 11
+ENT.YawMin        = -45
+ENT.YawMax        =  45
+ENT.PitchMin      = -5
+ENT.PitchMax      =  15
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(62, 0, 10)

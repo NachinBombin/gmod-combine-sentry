@@ -1,0 +1,24 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "M61 Vulcan Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_m61.png"
+ENT.BoneBarrels = "barrels"
+
+ENT.SentryModel      = "models/gredwitch/m61.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 14
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.02
+ENT.BulletSound      = "weapons/ar2/fire1.wav"
+ENT.FireInterval     = 60 / 6000
+ENT.YawMin           = -180
+ENT.YawMax           =  180
+ENT.PitchMin         = -5
+ENT.PitchMax         =  80
+ENT.SentryHealth     = 700
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(40, 0, 12)

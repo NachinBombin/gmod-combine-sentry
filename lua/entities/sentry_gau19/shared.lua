@@ -1,0 +1,23 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "GAU-19 .50 cal Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_gau19.png"
+ENT.BoneBarrels = "barrels"
+
+ENT.SentryModel      = "models/gredwitch/gau19.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 38
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.016
+ENT.BulletSound      = "weapons/emplacement/gun_shoot1.wav"
+ENT.FireInterval     = 60 / 1500
+ENT.YawMin           = -180
+ENT.YawMax           =  180
+ENT.PitchMin         = -10
+ENT.PitchMax         =  60
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(38, 0, 12)

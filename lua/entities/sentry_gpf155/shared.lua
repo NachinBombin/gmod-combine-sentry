@@ -1,0 +1,21 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "GPF 155mm Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_gpf155.png"
+
+ENT.SentryModel   = "models/gredwitch/gpf155.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 480
+ENT.RocketRadius  = 580
+ENT.FireInterval  = 60 / 3
+ENT.YawMin        = -45
+ENT.YawMax        =  45
+ENT.PitchMin      = -5
+ENT.PitchMax      =  35
+ENT.SentryHealth  = 750
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(78, 0, 12)

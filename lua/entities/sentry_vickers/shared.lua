@@ -1,0 +1,22 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "Vickers .303 Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_vickers.png"
+
+ENT.SentryModel      = "models/gredwitch/vickers.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 14
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.022
+ENT.BulletSound      = "weapons/ar2/fire1.wav"
+ENT.FireInterval     = 60 / 475
+ENT.YawMin           = -90
+ENT.YawMax           =  90
+ENT.PitchMin         = -10
+ENT.PitchMax         =  30
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(36, 0, 12)

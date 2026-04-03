@@ -1,0 +1,20 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "QF 6-pdr AT Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_6pdr.png"
+
+ENT.SentryModel   = "models/gredwitch/6pdr.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 200
+ENT.RocketRadius  = 140
+ENT.FireInterval  = 60 / 15
+ENT.YawMin        = -45
+ENT.YawMax        =  45
+ENT.PitchMin      = -5
+ENT.PitchMax      =  15
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(58, 0, 10)

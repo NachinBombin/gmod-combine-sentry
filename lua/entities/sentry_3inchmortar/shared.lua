@@ -1,0 +1,20 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "3-inch Mortar Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_3inchmortar.png"
+
+ENT.SentryModel   = "models/gredwitch/3inchmortar.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 130
+ENT.RocketRadius  = 260
+ENT.FireInterval  = 60 / 20
+ENT.YawMin        = -180
+ENT.YawMax        =  180
+ENT.PitchMin      =  45
+ENT.PitchMax      =  85
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(10, 0, 20)

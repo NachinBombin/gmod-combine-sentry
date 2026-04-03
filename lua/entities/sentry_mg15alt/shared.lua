@@ -1,0 +1,22 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "MG15 Alt Mount Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_mg15_alt.png"
+
+ENT.SentryModel      = "models/gredwitch/mg15_alt.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 13
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.02
+ENT.BulletSound      = "weapons/ar2/fire1.wav"
+ENT.FireInterval     = 60 / 1100
+ENT.YawMin           = -90
+ENT.YawMax           =  90
+ENT.PitchMin         = -10
+ENT.PitchMax         =  75
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(35, 0, 12)

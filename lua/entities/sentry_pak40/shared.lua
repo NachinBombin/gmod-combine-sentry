@@ -1,0 +1,20 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "PaK 40 AT Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_pak40.png"
+
+ENT.SentryModel   = "models/gredwitch/pak40.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 220
+ENT.RocketRadius  = 160
+ENT.FireInterval  = 60 / 12
+ENT.YawMin        = -45
+ENT.YawMax        =  45
+ENT.PitchMin      = -5
+ENT.PitchMax      =  15
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(65, 0, 10)

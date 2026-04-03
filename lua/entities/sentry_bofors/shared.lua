@@ -1,0 +1,23 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "Bofors 40mm AA Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_bofors.png"
+
+ENT.SentryModel      = "models/gredwitch/bofors.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 60
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.012
+ENT.BulletSound      = "weapons/emplacement/gun_shoot1.wav"
+ENT.FireInterval     = 60 / 120
+ENT.YawMin           = -180
+ENT.YawMax           =  180
+ENT.PitchMin         = -5
+ENT.PitchMax         =  90
+ENT.SentryHealth     = 600
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(44, 0, 16)

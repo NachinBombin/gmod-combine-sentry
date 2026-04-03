@@ -1,0 +1,22 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "MG42 Alt Mount Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_mg42_alt.png"
+
+ENT.SentryModel      = "models/gredwitch/mg42_alt.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 13
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.025
+ENT.BulletSound      = "weapons/ar2/fire1.wav"
+ENT.FireInterval     = 60 / 1250
+ENT.YawMin           = -90
+ENT.YawMax           =  90
+ENT.PitchMin         = -10
+ENT.PitchMax         =  45
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(38, 0, 10)

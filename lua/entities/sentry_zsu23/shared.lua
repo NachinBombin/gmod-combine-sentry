@@ -1,0 +1,23 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "ZSU-23 Twin AA Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_zsu23.png"
+
+ENT.SentryModel      = "models/gredwitch/zsu23.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 42
+ENT.BulletNum        = 2
+ENT.BulletInaccuracy = 0.016
+ENT.BulletSound      = "weapons/emplacement/gun_shoot1.wav"
+ENT.FireInterval     = 60 / 600
+ENT.YawMin           = -180
+ENT.YawMax           =  180
+ENT.PitchMin         = -5
+ENT.PitchMax         =  85
+ENT.SentryHealth     = 650
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(48, 0, 18)

@@ -1,0 +1,23 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "Flak 36 88mm AA Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_flak36.png"
+
+ENT.SentryModel      = "models/gredwitch/flak36.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 120
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.008
+ENT.BulletSound      = "weapons/emplacement/gun_shoot1.wav"
+ENT.FireInterval     = 60 / 18
+ENT.YawMin           = -180
+ENT.YawMax           =  180
+ENT.PitchMin         = -3
+ENT.PitchMax         =  85
+ENT.SentryHealth     = 800
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(70, 0, 20)

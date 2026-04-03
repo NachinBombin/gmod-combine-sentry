@@ -1,0 +1,22 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "DShK 12.7mm Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_dshk.png"
+
+ENT.SentryModel      = "models/gredwitch/dshk.mdl"
+ENT.FireType         = "BULLET"
+ENT.BulletDamage     = 32
+ENT.BulletNum        = 1
+ENT.BulletInaccuracy = 0.015
+ENT.BulletSound      = "weapons/emplacement/gun_shoot1.wav"
+ENT.FireInterval     = 60 / 650
+ENT.YawMin           = -180
+ENT.YawMax           =  180
+ENT.PitchMin         = -10
+ENT.PitchMax         =  50
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.MuzzleFallback   = Vector(42, 0, 14)

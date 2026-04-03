@@ -1,0 +1,20 @@
+ENT.Base = "sentry_base"
+ENT.PrintName = "M5 3-inch AT Sentry"
+ENT.Author = "kebinresi"
+ENT.Category = "Combine Sentries"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true
+ENT.SpawnIcon = "entities/gred_emp_m5.png"
+
+ENT.SentryModel   = "models/gredwitch/m5.mdl"
+ENT.FireType      = "ROCKET"
+ENT.RocketDamage  = 200
+ENT.RocketRadius  = 145
+ENT.FireInterval  = 60 / 12
+ENT.YawMin        = -45
+ENT.YawMax        =  45
+ENT.PitchMin      = -5
+ENT.PitchMax      =  15
+ENT.BoneYaw       = "base"
+ENT.BonePitch     = "gun"
+ENT.MuzzleFallback = Vector(60, 0, 10)
