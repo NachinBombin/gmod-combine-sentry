@@ -2,9 +2,10 @@ ENT.Type          = "anim"
 ENT.Base          = "base_anim"
 ENT.PrintName     = "Combine Sentry"
 ENT.Author        = "kebinresi"
-ENT.Category      = "Combine"
+ENT.Category      = "Combine Sentries"
 ENT.Spawnable     = true
 ENT.AdminSpawnable = true
+ENT.SpawnIcon     = "entities/gred_emp_sentry.png"
 
 ENT.STATE_BROKEN    = -1
 ENT.STATE_OFF       =  0
