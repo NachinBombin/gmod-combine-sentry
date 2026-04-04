@@ -1,0 +1,12 @@
+{
+    "title": "Nachin Sentries",
+    "description": "All Gredwitch emplacements re-skinned as autonomous turrets using the nachin_sentry_base framework.",
+    "type": "ServerContent",
+    "tags": [
+        "fun",
+        "realism"
+    ],
+    "ignore": [
+        ".git"
+    ]
+}
