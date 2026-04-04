@@ -1,0 +1,25 @@
+include("shared.lua")
+ENT.Base           = "nachin_sentry_base"
+ENT.PrintName      = "[SENTRY] Bofors 40mm"
+ENT.Author         = "kebinresi"
+ENT.Category       = "Nachin Sentries"
+ENT.Spawnable      = true
+ENT.AdminSpawnable = true
+ENT.SpawnMenuIcon  = "vgui/entities/gred_emp_bofors"
+ENT.GunModel      = "models/gredwitch/bofors/bofors_gun.mdl"
+ENT.GunPivotBone  = "bofors_base"
+ENT.GunMuzzleBone = "bofors_barrel"
+ENT.GunBarrelBone = "bofors_barrels"
+ENT.GunWeaponType = "hitscan"
+ENT.GunFireRate   = 2.0
+ENT.GunDamage     = 55
+ENT.GunYawMin     = -180
+ENT.GunYawMax     = 180
+ENT.GunPitchMin   = -5
+ENT.GunPitchMax   = 90
+ENT.GunTurnSpeed  = 40
+ENT.GunMaxHealth  = 600
+ENT.GunRadius     = 3500
+ENT.GunShootSound = "gred_emp/bofors/bofors_shoot.wav"
+ENT.GunMuzzleFX   = "MuzzleEffect"
+ENT.GunMuzzleFB   = Vector(32, 0, 52)

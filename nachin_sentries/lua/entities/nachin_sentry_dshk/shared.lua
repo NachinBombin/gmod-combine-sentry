@@ -1,0 +1,25 @@
+include("shared.lua")
+ENT.Base           = "nachin_sentry_base"
+ENT.PrintName      = "[SENTRY] DShK"
+ENT.Author         = "kebinresi"
+ENT.Category       = "Nachin Sentries"
+ENT.Spawnable      = true
+ENT.AdminSpawnable = true
+ENT.SpawnMenuIcon  = "vgui/entities/gred_emp_dshk"
+ENT.GunModel      = "models/gredwitch/dshk/dshk_gun.mdl"
+ENT.GunPivotBone  = "dshk_base"
+ENT.GunMuzzleBone = "dshk_barrel"
+ENT.GunBarrelBone = "dshk_barrels"
+ENT.GunWeaponType = "hitscan"
+ENT.GunFireRate   = 10.0
+ENT.GunDamage     = 28
+ENT.GunYawMin     = -180
+ENT.GunYawMax     = 180
+ENT.GunPitchMin   = -10
+ENT.GunPitchMax   = 85
+ENT.GunTurnSpeed  = 60
+ENT.GunMaxHealth  = 500
+ENT.GunRadius     = 2500
+ENT.GunShootSound = "gred_emp/dshk/dshk_shoot.wav"
+ENT.GunMuzzleFX   = "MuzzleEffect"
+ENT.GunMuzzleFB   = Vector(25, 0, 45)

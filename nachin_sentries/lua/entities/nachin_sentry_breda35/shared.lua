@@ -1,0 +1,25 @@
+include("shared.lua")
+ENT.Base           = "nachin_sentry_base"
+ENT.PrintName      = "[SENTRY] Breda 35"
+ENT.Author         = "kebinresi"
+ENT.Category       = "Nachin Sentries"
+ENT.Spawnable      = true
+ENT.AdminSpawnable = true
+ENT.SpawnMenuIcon  = "vgui/entities/gred_emp_breda35"
+ENT.GunModel      = "models/gredwitch/breda35/breda35_gun.mdl"
+ENT.GunPivotBone  = "breda35_base"
+ENT.GunMuzzleBone = "breda35_barrel"
+ENT.GunBarrelBone = "breda35_barrels"
+ENT.GunWeaponType = "hitscan"
+ENT.GunFireRate   = 4.0
+ENT.GunDamage     = 45
+ENT.GunYawMin     = -180
+ENT.GunYawMax     = 180
+ENT.GunPitchMin   = -5
+ENT.GunPitchMax   = 85
+ENT.GunTurnSpeed  = 45
+ENT.GunMaxHealth  = 500
+ENT.GunRadius     = 3000
+ENT.GunShootSound = "gred_emp/breda35/breda35_shoot.wav"
+ENT.GunMuzzleFX   = "MuzzleEffect"
+ENT.GunMuzzleFB   = Vector(30, 0, 50)
