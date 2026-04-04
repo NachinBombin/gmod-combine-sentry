@@ -1,6 +1,6 @@
 -- combine_sentry/init.lua
--- All AI logic is inherited from sentry_base/init.lua.
--- No overrides needed here.
+-- Exact same structure as sentry_m2hmg/init.lua.
+-- All AI logic lives in sentry_base/init.lua via inheritance.
 
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
