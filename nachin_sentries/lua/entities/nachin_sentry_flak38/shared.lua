@@ -1,0 +1,25 @@
+include("shared.lua")
+ENT.Base           = "nachin_sentry_base"
+ENT.PrintName      = "[SENTRY] Flak 38"
+ENT.Author         = "kebinresi"
+ENT.Category       = "Nachin Sentries"
+ENT.Spawnable      = true
+ENT.AdminSpawnable = true
+ENT.SpawnMenuIcon  = "vgui/entities/gred_emp_flak38"
+ENT.GunModel      = "models/gredwitch/flak38/flak38_gun.mdl"
+ENT.GunPivotBone  = "flak38_base"
+ENT.GunMuzzleBone = "flak38_barrel"
+ENT.GunBarrelBone = "flak38_barrels"
+ENT.GunWeaponType = "hitscan"
+ENT.GunFireRate   = 7.0
+ENT.GunDamage     = 40
+ENT.GunYawMin     = -180
+ENT.GunYawMax     = 180
+ENT.GunPitchMin   = -5
+ENT.GunPitchMax   = 90
+ENT.GunTurnSpeed  = 55
+ENT.GunMaxHealth  = 500
+ENT.GunRadius     = 3000
+ENT.GunShootSound = "gred_emp/flak38/flak38_shoot.wav"
+ENT.GunMuzzleFX   = "MuzzleEffect"
+ENT.GunMuzzleFB   = Vector(28, 0, 50)

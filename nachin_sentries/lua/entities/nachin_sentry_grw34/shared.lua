@@ -1,0 +1,25 @@
+include("shared.lua")
+ENT.Base           = "nachin_sentry_base"
+ENT.PrintName      = "[SENTRY] GrW 34 Mortar"
+ENT.Author         = "kebinresi"
+ENT.Category       = "Nachin Sentries"
+ENT.Spawnable      = true
+ENT.AdminSpawnable = true
+ENT.SpawnMenuIcon  = "vgui/entities/gred_emp_grw34"
+ENT.GunModel      = "models/gredwitch/grw34/grw34_gun.mdl"
+ENT.GunPivotBone  = "grw34_base"
+ENT.GunMuzzleBone = "grw34_barrel"
+ENT.GunBarrelBone = ""
+ENT.GunWeaponType = "rocket"
+ENT.GunFireRate   = 0.25
+ENT.GunDamage     = 200
+ENT.GunYawMin     = -180
+ENT.GunYawMax     = 180
+ENT.GunPitchMin   = 45
+ENT.GunPitchMax   = 90
+ENT.GunTurnSpeed  = 30
+ENT.GunMaxHealth  = 400
+ENT.GunRadius     = 2000
+ENT.GunShootSound = "gred_emp/grw34/grw34_shoot.wav"
+ENT.GunMuzzleFX   = "MuzzleEffect"
+ENT.GunMuzzleFB   = Vector(10, 0, 50)
