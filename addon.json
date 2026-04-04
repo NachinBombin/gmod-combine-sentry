@@ -1,0 +1,7 @@
+{
+    "title": "Combine Sentries - All Emplacements",
+    "description": "Every gred_emp emplacement ported as autonomous AI sentry NPCs. 53 weapons total.",
+    "type": "ServerContent",
+    "tags": ["npc","sentry","combine","emplacement"],
+    "ignore": []
+}
