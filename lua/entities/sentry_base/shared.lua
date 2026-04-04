@@ -2,13 +2,14 @@
 -- Shared base for all auto-sentry re-skins.
 -- Children set model, fire config and angle limits; AI lives in init.lua.
 
-ENT.Type           = "anim"
-ENT.Base           = "base_anim"
-ENT.PrintName      = "Sentry Base"
-ENT.Author         = "kebinresi"
-ENT.Category       = "Combine Sentries"
-ENT.Spawnable      = false   -- base is not directly spawnable
-ENT.AdminSpawnable = false
+ENT.Type               = "anim"
+ENT.Base               = "base_anim"
+ENT.ScriptedEntityType = "ent"   -- required for GMod to render spawnmenu icons
+ENT.PrintName          = "Sentry Base"
+ENT.Author             = "kebinresi"
+ENT.Category           = "Combine Sentries"
+ENT.Spawnable          = false   -- base is not directly spawnable
+ENT.AdminSpawnable     = false
 
 -- States (shared with combine_sentry)
 ENT.STATE_BROKEN     = -1
@@ -38,7 +39,7 @@ ENT.RocketSound      = "weapons/rpg/fire1.wav"
 ENT.RocketSpeed      = 1200
 
 -- Fire timing (seconds between shots)
-ENT.FireInterval     = 1 / 15   -- default ~15 RPM
+ENT.FireInterval     = 1 / 15
 
 -- Turret limits (degrees). YawMin/Max: use -180/180 for full 360.
 ENT.YawMin           = -180
@@ -53,11 +54,11 @@ ENT.TurretRadius     = 1500
 ENT.TurnSpeed        = 60
 
 -- Bone names (override per model if needed)
-ENT.BoneYaw          = "base"       -- bone that rotates on Z (yaw)
-ENT.BonePitch        = "gun"        -- bone that rotates on X (pitch)
-ENT.BoneBarrels      = nil          -- optional barrel-spin bone
-ENT.BoneMuzzle       = nil          -- optional muzzle bone
-ENT.BoneLaser        = nil          -- optional laser bone
+ENT.BoneYaw          = "base"
+ENT.BonePitch        = "gun"
+ENT.BoneBarrels      = nil
+ENT.BoneMuzzle       = nil
+ENT.BoneLaser        = nil
 
 -- Muzzle fallback (when no muzzle bone)
 ENT.MuzzleFallback   = Vector(40, 0, 20)
