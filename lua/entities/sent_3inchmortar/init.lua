@@ -2,7 +2,7 @@
 AddCSLuaFile()
 ENT.Type="anim" ENT.Base="base_anim" ENT.PrintName="3-inch Mortar Sentry"
 ENT.Category="Combine Sentries" ENT.Spawnable=true ENT.AdminOnly=false ENT.RenderGroup=RENDERGROUP_OPAQUE
-local COMBINE_FRIENDLY={["npc_combine_s"]=true,["npc_combine_camera"]=true,["npc_turret_floor"]=true,["npc_turret_ceiling"]=true,["npc_turret_ground"]=true,["npc_metropolice"]=true,["npc_cscanner"]=true,["npc_clawscanner"]=true,["npc_manhack"]=true,["npc_strider"]=true,["npc_helicopter"]=true,["npc_combinegunship"]=true,["npc_hunter"]=true}
+local CF={["npc_combine_s"]=true,["npc_combine_camera"]=true,["npc_turret_floor"]=true,["npc_turret_ceiling"]=true,["npc_turret_ground"]=true,["npc_metropolice"]=true,["npc_cscanner"]=true,["npc_clawscanner"]=true,["npc_manhack"]=true,["npc_strider"]=true,["npc_helicopter"]=true,["npc_combinegunship"]=true,["npc_hunter"]=true}
 function ENT:Initialize()
   if not SERVER then return end
   self:SetModel("models/weapons/w_smg1.mdl")
@@ -15,7 +15,7 @@ function ENT:Initialize()
 end
 function ENT:CanEngage(e)
   if not IsValid(e) or e==self then return false end
-  if e:IsNPC() then if e:Health()<=0 or COMBINE_FRIENDLY[e:GetClass()] then return false end
+  if e:IsNPC() then if e:Health()<=0 or CF[e:GetClass()] then return false end
   elseif e:IsPlayer() then if not e:Alive() then return false end
   else return false end
   return self:CanSeeTarget(e)
@@ -56,8 +56,5 @@ function ENT:Think()
 end
 function ENT:OnTakeDamage(d)
   self:SetHealth(self:Health()-d:GetDamage())
-  if self:Health()<=0 then
-    local ef=EffectData() ef:SetOrigin(self:GetPos()) util.Effect("Explosion",ef)
-    self:EmitSound("ambient/explosions/explode_"..math.random(1,9)..".wav") self:Remove()
-  end
+  if self:Health()<=0 then local ef=EffectData() ef:SetOrigin(self:GetPos()) util.Effect("Explosion",ef) self:EmitSound("ambient/explosions/explode_"..math.random(1,9)..".wav") self:Remove() end
 end

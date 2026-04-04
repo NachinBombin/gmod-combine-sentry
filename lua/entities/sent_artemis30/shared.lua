@@ -1,3 +1,3 @@
 AddCSLuaFile()
-ENT.Type="anim" ENT.Base="base_anim" ENT.PrintName="2A65 Msta-B Sentry"
+ENT.Type="anim" ENT.Base="base_anim" ENT.PrintName="Artemis 30mm Sentry"
 ENT.Category="Combine Sentries" ENT.Spawnable=true ENT.AdminOnly=false

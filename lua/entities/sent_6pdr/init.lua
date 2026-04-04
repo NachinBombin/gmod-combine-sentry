@@ -1,16 +1,16 @@
--- SENTRY: 2A65 Msta-B | AR2 | DMG:80 | Range:3000
+-- SENTRY: 6-Pounder AT Gun | AR2AltFire | DMG:120 | Range:3500
 AddCSLuaFile()
-ENT.Type="anim" ENT.Base="base_anim" ENT.PrintName="2A65 Msta-B Sentry"
+ENT.Type="anim" ENT.Base="base_anim" ENT.PrintName="6-Pounder AT Gun Sentry"
 ENT.Category="Combine Sentries" ENT.Spawnable=true ENT.AdminOnly=false ENT.RenderGroup=RENDERGROUP_OPAQUE
 local CF={["npc_combine_s"]=true,["npc_combine_camera"]=true,["npc_turret_floor"]=true,["npc_turret_ceiling"]=true,["npc_turret_ground"]=true,["npc_metropolice"]=true,["npc_cscanner"]=true,["npc_clawscanner"]=true,["npc_manhack"]=true,["npc_strider"]=true,["npc_helicopter"]=true,["npc_combinegunship"]=true,["npc_hunter"]=true}
 function ENT:Initialize()
   if not SERVER then return end
   self:SetModel("models/weapons/w_smg1.mdl")
   self:SetSolid(SOLID_VPHYSICS) self:PhysicsInit(SOLID_VPHYSICS)
-  self:SetHealth(800) self:SetMaxHealth(800)
+  self:SetHealth(700) self:SetMaxHealth(700)
   local p=self:GetPhysicsObject() if IsValid(p) then p:EnableMotion(false) end
-  self.NextFireTime=0 self.FireDelay=0.5 self.BurstCount=0 self.BurstMax=1 self.BurstDelay=3.0
-  self.NextBurstTime=0 self.Target=nil self.Range=3000 self.Damage=80 self.AmmoType="AR2"
+  self.NextFireTime=0 self.FireDelay=1.5 self.BurstCount=0 self.BurstMax=1 self.BurstDelay=2.0
+  self.NextBurstTime=0 self.Target=nil self.Range=3500 self.Damage=120 self.AmmoType="AR2AltFire"
   self:NextThink(CurTime()+0.1)
 end
 function ENT:CanEngage(e)
@@ -36,8 +36,8 @@ function ENT:Fire()
   local t=self.Target if not IsValid(t) then return end
   local m=self:GetPos()+Vector(0,0,30) local tp=t:GetPos()+Vector(0,0,32)
   local d=(tp-m):GetNormalized()
-  self:FireBullets({Num=1,Src=m,Dir=d,Spread=Vector(0.02,0.02,0),Tracer=1,Force=15,Damage=self.Damage,AmmoType=self.AmmoType,AttackerTable={self}})
-  self:EmitSound("weapons/ar2/fire1.wav",85,math.random(95,105))
+  self:FireBullets({Num=1,Src=m,Dir=d,Spread=Vector(0.02,0.02,0),Tracer=1,Force=20,Damage=self.Damage,AmmoType=self.AmmoType,AttackerTable={self}})
+  self:EmitSound("weapons/ar2/altfire1.wav",85,math.random(95,105))
   local ef=EffectData() ef:SetOrigin(m) ef:SetNormal(d) util.Effect("MuzzleFlash",ef)
 end
 function ENT:Think()
